@@ -66,23 +66,44 @@ function calcResult(){
 	validateForm()
         if(countG>countS && countG>countR && countG>countH){
 
-        	getGryffindor();
-                console.log("if this works youre a G");
+                getGryffindor();
+                console.log("Gryffinfdor!");
         }
 
         else if (countR>countG && countR>countH && countR>countS) {
                 getRavenclaw();
-        	console.log("Ravenclaw!!");
+                console.log("Ravenclaw!!");
         }
 
         else if (countH>countG && countH>countR && countH>countS){
                 getHufflepuff();
-        	console.log("Hufflepuff!!");
+                console.log("Hufflepuff!!");
+        }
+
+        else if (countS>countH && countS>countG&& countS>countR){
+                getSlytherin();
+                console.log("Slytherin!!");
+        }
+
+        else if(countG==countR || countG==countH || countG==countS){
+                getGryffindor();
+                console.log("Gryffinfdor!");
+
+        } 
+        else if (countS==countR|| countS==countH){
+                getSlytherin();
+                console.log("Slytherin!!");
+
+        }
+        else if (countH==countR){
+                getHufflepuff();
+                console.log("Hufflepuff!!");
         }
 
         else {
-        	getSlytherin();
-                console.log("Slytherin!!");
+                getRavenclaw();
+                console.log("Ravenclaw!!");
+                
         }
 
         	
