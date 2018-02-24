@@ -211,6 +211,41 @@
 			<br><br><br>
 			<hr>
 		    </div>
+			
+			 <div id="question-box12">
+			<p class="question">Do you cheat in class?</p>
+			<input type="radio" onclick = "answerH()" id="que" name="q12" class="answerH" value="4">
+			<label id="Hufflepuff12">Absolutely not.</label>
+			<br><br>
+			<input type="radio" onclick ="answerG()" id="que" name="q12" class="answerG" value="1">
+			<label id="Gryffindor12">Your try not to. But sometimes it's the only way to stay afloat.</label>
+			<br><br>
+			<input type="radio" onclick = "answerR()" id="que" name="q12" class="answerR" value="2">
+			<label id="Ravenclaw12">If you count sharing answers and helping friends who are struggling</label>
+			<br><br>
+			<input type="radio" onclick = "answerS()" id="que" name="q12" class="answerS" value="3">
+			<label id="Slytherin12">Yes, a fair amount. Everyone does it.</label>
+			<br><br><br>
+			<hr>
+		    </div>
+		   
+
+		    <div id="question-box13">
+		    <p class="question">And finally: We know that the Sorting Hat takes into account your preferences. So which Hogwarts house do you feel you identify with most closely?</p>
+		    <input type="radio" id="que" name="q13" class="answerG" onclick="countG=+10;">
+		    <label id="Gryffindor11">Gryffindor</label>
+		    <br><br>
+		    <input type="radio" id="que" name="q13" class="answerH" onclick="countH=+10;">
+		    <label id="Hufflepuff11">Hufflepuff</label>
+		    <br><br>
+		    <input type="radio" id="que" name="q13" class="answerR" onclick="countR=+10;">
+		    <label id="Ravenclaw11">Ravenclaw</label>
+		    <br><br>
+		    <input type="radio" id="que" name="q13" class="answerS" onclick="countS+10;">
+		    <label id="Slytherin11">Slytherin</label>
+		    <br><br>
+
+		    </div>
 
 			<br><br><br>
 			<button type="button" id="submit-button" onclick="calcResult()">Submit Quiz</button>
