@@ -38,9 +38,6 @@ function retakeQuiz(){
         window.location="HPQlanding.html";
 }
 
-function deletebox(){
-        
-}
 function getGryffindor() {
         document.getElementById("welcome-textGryffindor").style.display="block";
         document.getElementById("content").style.display = "none";
@@ -66,6 +63,7 @@ function getHufflepuff(){
 
 function calcResult(){
 	on()
+	validateForm()
         if(countG>countS && countG>countR && countG>countH){
 
         	getGryffindor();
@@ -89,6 +87,23 @@ function calcResult(){
 
         	
 }
+function validateForm() {
+    var radios = document.getElementsByName("que");
+    var formValid = false;
 
+    var i = 0;
+    while (!formValid && i < radios.length) {
+        if (radios[i].checked) 
+                { formValid = radios[i].value; }
+        i++;        
+    }
+
+    if (!formValid) {
+        alert("You haven't completed the quiz!");
+        window.location="HPQquiz.html";
+}
+
+
+}
 
 
