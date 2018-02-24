@@ -16,7 +16,7 @@
         margin-left:auto;
         margin-right:auto;
         border-radius: 12px;
-        background-color: #f2f2f2;
+        background-color: white;
         border-color: white;
         border-style: solid;
 
@@ -31,6 +31,7 @@
         margin-right:auto;
         border-style: solid;
         border-radius: 12px;
+        background-color: white;
 
     }
 
