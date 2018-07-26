@@ -2,137 +2,162 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>location tracking</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="jquery-2.2.0.min.js"></script>
-    <script type="text/css" src="bootstrap.css"></script>
-    <link href="bootstrap1/bootstrap.css" type="text/css" rel="stylesheet">
-    <style>
-        div.col-md-4{
-            font-size: 100%;
-        }
-        div.container{
-            font-size: 150%;
-        }
-        div.col-md-6{
-            background-color: black;
-            height: 100px;
-            width:100%;
-            text-align: center;
-            color: white;
-        }
-        footer {
-            display: block;
-            position: absolute;
-            bottom: 0px;
-            background-color: black;
-            height: 50px;
-            width:100%;
-            text-align: center;
-            color: white;
-        }
-        button{
-            background-color: black;
-            padding: 15px;
-        }
-        .dropbtn {
-            background-color: black;
-            color: white;
-            padding: 0px;
-            font-size: 16px;
-            border: none;
+    <title>cv_profile</title>
 
-        }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-            z-index: 1;
-            top: -90px;
 
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: darkgrey;
-            min-width: 160px;
-            z-index: 1;
-        }
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-size: 16px;
-        }
-        .dropdown-content a:hover {
-            background-color: lightgrey;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        div.line {
-            width: 60px;
-            height: 4px;
-            background-color: white;
-            margin: 10px 0;
-        }
-
-    </style>
+<style>
+    body {
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: larger;
+        padding:10px;
+    }
+    img{
+        width:200px;
+        height:200px;
+        padding-left: 50px;
+    }
+    footer {
+        width: 100%;
+        background: lightgray;
+        text-align: center;
+        height: 30px;
+    }
+    header {
+        background-color: lightgray;
+        height: 200px;
+        text-align: center;
+    }
+    h3{
+        background-color: lightgrey;
+        border-style: none;
+        border-radius: 6px;
+        padding: 10px;
+    }
+    }
+    #main{
+        overflow: auto;
+        padding-bottom: 30px;
+    }
+    #footer{
+        position: relative;
+        margin-top: -30px;
+        height: 30px;
+        clear: both;
+    }
+    div.left{
+        width: 40%;
+        height: 100%;
+        float: left;
+        padding: 10px;
+        background-color: rgba(24,24,24,0.09);
+    }
+    div.right{
+        width: 55%;
+        height: 100%;
+        float: right;
+        padding: 10px;
+        background-color: rgba(24,24,24,0.09);
+    }
+   
+</style>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-                  <h1>Tracking Your Location</h1>
-        </div>
-            <div class="col-md-3">
-                <div class="dropdown">
-                    <button class="dropbtn"><div class="line"></div><div class="line"></div><div class="line"></div></button>
-                    <div class="dropdown-content">
-                        <a href="BT1.html">HOME</a>
-                        <a href="BTabout.html">ABOUT US</a>
-                        <a href="BTcontact.html">CONTACT US</a>
-                        <a href="BTlogin.html">LOGIN</a>
-                        <a href="BTaccount.html">CREATE ACCOUNT</a>
-                    </div>
-                </div>
-            </div>
-    </div>
-    <div class="row">
-
-        <div class="col-md-9">
-            <img src="map1.png" alt="map" width="800px" height="400px">
-            <br><br>
-            <button><a href="BTlocation.html"><span style="color: white" >TRY AGAIN</span></a></button>
-            <br><br>
-            <div class="form-group">
-                <label for="destination">Your Destination:</label>
-                <br>
-                <input type="text" class="form-control" id="destination" style="width:300px;">
-            </div>
-            <br>
-            <button><a href="BTbus.html"><span style="color: white" >CONTINUE</span></a> </button>
-        </div>
-        <div class="col-md-3">
-            <div class="form-group">
-                <br><br>
-                <label for="name">Enter Location To Search:</label>
-                <input type="text" class="form-control" id="name">
-            </div>
-            <button><a href="BTlocation.html"><span style="color: white">SEARCH</span></a></button>
-            <br>
-            <hr>
-            <br>
-
-            <br><br><br><br><br><br><br><br><br><br><hr><br>
-        </div>
-        </div>
-    <div class="col-md-12">
-        <br><br><br><hr><br>
-<footer>
-    © aakankshya.shrestha
-</footer>
+    
+        
+   
+<div id="main">
+<header>
+    <img style= "float:left;" src="profile_me_cartoon.png" alt="this is my picture">
+    <h2 style="padding-top: 20px;">Aakankshya Shrestha</h2><p>CV</p>
+    <p>Student at Deerwalk Institute of Technology, Batch of 2020</p>
+</header>
+<br>
+    <div class="left">
+    <fieldset>
+        
+        <span><h3>Personal Information</h3></span>
+        <h4>Address:</h4>
+        Samakhushi, Kathmandu<br>
+        <hr>
+        <h4>Contact</h4>
+        <p>aakanshya.shrestha@deerwalk.edu.np</p>
+        <p>9861604944</p>
+        <hr>
+        <h3>Software Skills</h3>
+        <p>Adobe Photoshop</p>
+        <p>Adobe Illustrator</p>
+  
+        <hr>
+        <h3>Projects I've worked on</h3>
+       
+            <p><a href="https://aakankshya-shrestha.github.io/home.html" target="_blank">HTML and CSS project</a></p>
+            <p><a href="https://aakankshya-shrestha.github.io/project1/BT1.html" target="_blank">Bus Tracker Term paper project</a></p>
+            <p><a href="https://aakankshya-shrestha.github.io/Sorting/HPQlanding.html" target="_blank">Javascript Project</a></p>
+       <a href="https://wewriteat.wordpress.com" target="blank">
+        <img src="row_strips.png" alt = "Row's strips" style="height: 395px; width: 400px;">
+        </a>
+    </fieldset>
 </div>
+<div class="right">
+    <fieldset>
+        <h3>Educational Qualification</h3>
+        <h4>Deerwalk Institute Of Technology</h4>
+        Undergraduate Study<br>
+        <i>Nov 2016 - Current</i><hr>
+        <h4>Kathmandu Model College</h4>
+        High School<br>
+        <i>2014-2016</i><hr>
+        <h4>Budhanilkantha School</h4>
+        School level<br>
+        <i>2007-2014</i>   
+        <hr>
+        <h3>Pgrogramming Languages</h3>
+        
+            <table>
+                <tr>
+                    <td>HTML</td>
+                    <td>CSS</td>
+
+                    </tr>
+                <tr></tr><tr></tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>C</td>
+                </tr>
+                <tr></tr><tr></tr>
+                <tr>
+                    <td>C++</td>
+                    <td>Python(basics)</td>
+                </tr>
+                <tr></tr><tr></tr>
+                <tr>
+                    <td>PHP <i>(basics)</i></td>
+                    <td>Java <i>(basics)</i></td>
+               </tr>
+               <tr></tr><tr></tr>
+            </table>
+           <br>
+            <hr>
+        <h3>Workshops Attended</h3>
+        <p>Adobe Photoshop</p>
+        <p>Javascript semester training</p>
+        <br>
+        <hr>
+        <h3>Relevant Experience</h3>
+       
+            <p>Working as content writer at <a href = "https://techlekh.com" target="_blank">Techlekh</a></p>
+            <p>Co-editor in chief at <a href="http://dwitnews.com/" target="_blank">DWIT News</a></p>
+            <p>Wordpress Blogging experience at <a href="https://aakankshyashrestha.wordpress.com/" target="_blank">Shrestha Logs</a> and 
+            <a href="https://wewriteat.wordpress.com" target="blank"> Aspiring Authors</a></p>
+  
+    </fieldset>
+</div>
+</div>
+<div id="footer">
+    <footer>
+        © aakankshya.shrestha34
+    </footer>
 </div>
 </body>
+
 </html>
