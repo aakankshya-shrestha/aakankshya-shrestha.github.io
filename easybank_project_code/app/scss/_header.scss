@@ -1,0 +1,131 @@
+@import "variables";
+
+.header {
+  //hamburger open style
+  &.open {
+    .overlay {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 300ms ease-in-out;
+      z-index: 1;
+    }
+    .header__menu {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 300ms ease-in-out;
+      z-index: 1;
+    }
+    .header__toggle {
+      span:first-child {
+        transform: rotate(45deg);
+      }
+      span:nth-child(2) {
+        opacity: 0;
+      }
+      span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .overlay {
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease-in-out;
+    background-image: linear-gradient($darkBlue, transparent);
+  }
+
+  nav {
+    padding-top: 1.065rem;
+    padding-bottom: 1.065rem;
+    background-color: $white;
+    position: relative;
+    z-index: 2;
+  }
+  &__logo {
+    img {
+      width: 8.8125rem;
+      height: 1.375rem;
+    }
+  }
+
+  &__toggle {
+    span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: $darkBlue;
+      transform-origin: 3px 1px;
+      transition: all 300ms ease-in-out;
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__menu {
+    background: $white;
+    margin-top: 1.5rem;
+    padding: 1.625rem;
+    border-radius: 5px;
+    position: absolute;
+
+    width: 90%;
+    //for centering stuff with position absolute
+    left: 50%;
+    transform: translateX(-50%);
+    //for fade in fade out
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease-in-out;
+
+    a {
+      display: block;
+      padding: 0.625rem;
+      color: $darkBlue;
+      text-align: center;
+      &:hover {
+        color: $limeGreen;
+      }
+    }
+  }
+
+  &__links {
+    a {
+      font-size: $font-small;
+      color: $grayishBlue;
+      transition: color 300ms ease-in-out;
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 5px;
+        background: linear-gradient(to right, $limeGreen, $brightCyan);
+        opacity: 0;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        border-radius: 50px;
+      }
+
+      &:hover {
+        color: $darkBlue;
+        &::before {
+          opacity: 1;
+          transition: opacity 300ms ease-in-out;
+        }
+      }
+    }
+  }
+}

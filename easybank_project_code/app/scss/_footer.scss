@@ -1,0 +1,66 @@
+footer {
+  background-color: $darkBlue;
+  color: $white;
+  text-align: center;
+}
+.footer {
+  @include breakpoint-up(large) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    gap: 6rem;
+    font-size: $font-small;
+  }
+
+  &__logo {
+    @include breakpoint-up(large) {
+      text-align: left;
+    }
+    img {
+      margin-bottom: 1.875rem;
+    }
+  }
+  &__socials {
+    @include breakpoint-up(large) {
+      text-align: left;
+    }
+    a {
+      display: inline-block;
+      margin-bottom: 1.875rem;
+      color: $white;
+      //margin-right: 1rem;
+
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+    }
+  }
+
+  &__mid {
+    @include breakpoint-up(large) {
+      text-align: left;
+    }
+    a {
+      display: block;
+      margin-bottom: 1.875rem;
+      color: $white;
+
+      &:hover {
+        color: $limeGreen;
+      }
+    }
+  }
+
+  &__right {
+    @include breakpoint-up(large) {
+      text-align: right;
+    }
+    a.button {
+      display: inline-block;
+      margin-bottom: 1.875rem;
+    }
+    p {
+      color: $grayishBlue;
+      font-size: $font-small;
+    }
+  }
+}
