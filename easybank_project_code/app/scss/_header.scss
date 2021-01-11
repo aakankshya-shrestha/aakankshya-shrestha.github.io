@@ -97,6 +97,8 @@
 
   &__links {
     a {
+      padding-top: 1.065rem;
+      padding-bottom: 1.065rem;
       font-size: $font-small;
       color: $grayishBlue;
       transition: color 300ms ease-in-out;
@@ -115,7 +117,7 @@
         opacity: 0;
         left: 0;
         right: 0;
-        bottom: -30px;
+        bottom: -15px;
         border-radius: 50px;
       }
 

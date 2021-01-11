@@ -151,10 +151,15 @@ button,
   transition: opacity 300ms ease-in-out;
 
   &:hover {
-    opacity: 0.85;
+    box-shadow: 0px 5px 10px $grayishBlue;
   }
 
   &--lb {
     display: inline-block;
+  }
+  &.footer-cta {
+    &:hover {
+      box-shadow: 0px 5px 10px $veryDarkBlue;
+    }
   }
 }
