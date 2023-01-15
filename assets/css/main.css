@@ -286,6 +286,15 @@ table {
   margin-bottom: 2em;
 }
 
+.tech {
+  padding: 0.25em 0.5em 0.25em 0.5em;
+  background: #2c2929;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 1em;
+  margin: 0.25em 0.25em 0.25em 0.25em;
+}
+
 /* Container */
 
 .container {
@@ -1672,6 +1681,7 @@ footer {
   border-bottom: solid 1px #ccc;
   padding: 2.75em 1.75em 2.75em 1.75em;
   border-radius: 10px;
+  text-align: left;
 }
 
 .box .image.featured {
@@ -1757,7 +1767,7 @@ input[type="submit"].alt:hover,
 input[type="reset"].alt:hover,
 button.alt:hover,
 .button.alt:hover {
-  background: #353132;
+  background: #e53359;
 }
 
 input[type="button"].alt:active,
@@ -2289,7 +2299,7 @@ ul.social li a.fa-google-plus:hover {
 }
 
 #banner header {
-  background-color: rgba(34, 30, 31, 0.98);
+  background-color: rgba(34, 30, 31, 0.8);
   display: inline-block;
   padding: 2.5em 5em;
   border-radius: 5px;
@@ -2760,7 +2770,7 @@ ul.social li a.fa-google-plus:hover {
 
   #navPanel .link {
     display: block;
-    color: #888;
+    color: rgb(91, 91, 91);
     text-decoration: none;
     height: 44px;
     line-height: 44px;
