@@ -195,7 +195,7 @@ input,
 textarea,
 select {
   font-family: "Source Sans Pro";
-  font-weight: 300;
+  font-weight: 400;
   color: #5d5d5d;
   font-size: 14pt;
   line-height: 1.75em;
@@ -2204,7 +2204,7 @@ ul.social li a.fa-google-plus:hover {
 
 #nav > ul > li {
   display: inline-block;
-  font-style: italic;
+
   margin: 0 0.35em 0 0.35em;
 }
 
